@@ -11,10 +11,6 @@ Safety-oriented decision logic
 User-centric navigation features
 The primary goal is to enhance user security during travel, especially in unfamiliar or high-risk areas.
 
-🧠 Hackathon Experience
-
-Although our team didn’t secure a prize, the hackathon journey was highly rewarding. From ideation and rapid prototyping to late-night debugging and final presentation, the experience pushed us to think critically and build under real-world constraints.
-
 Key takeaways:
 Hands-on experience with real-time web technologies
 Strong collaboration and teamwork
