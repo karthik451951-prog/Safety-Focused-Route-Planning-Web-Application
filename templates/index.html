@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delhi Safe Route</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div id="app">
+
+    <!-- -------- LEFT PANEL -------- -->
+    <div id="panel">
+
+        <h2>Delhi Safe Route</h2>
+
+        <div class="input-group">
+            <label>Start Location</label>
+            <input id="start" placeholder="Eg: AIIMS Delhi">
+        </div>
+
+        <div class="input-group">
+            <label>Destination</label>
+            <input id="end" placeholder="Eg: Lajpat Nagar, Delhi">
+        </div>
+
+        <button onclick="generateRoute()">Find Safest Route</button>
+
+        <!-- ROUTE INFO -->
+        <div id="info"></div>
+
+        <!-- SOS BUTTON -->
+        <button id="sosBtn" onclick="sendSOS()">SOS</button>
+
+    </div>
+
+    <!-- -------- MAP -------- -->
+    <div id="map"></div>
+
+</div>
+
+<!-- -------- FOOTER EMERGENCY CONTACTS -------- -->
+<div id="footer">
+
+    <div class="footer-title">🚨 Emergency Contacts</div>
+
+    <input id="cname" placeholder="Name">
+    <input id="cphone" placeholder="Phone number">
+    <input id="cemail" placeholder="Email address">
+
+    <button onclick="saveContact()">Save Contact</button>
+
+</div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- App JS -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
